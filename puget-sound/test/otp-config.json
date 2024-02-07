@@ -2,6 +2,7 @@
   "otpFeatures": {
     "SandboxAPITransmodelApi": true,
     "SandboxAPILegacyGraphQLApi": true,
+    "SandboxAPIGeocoder": true,
     "SandboxAPIMapboxVectorTilesApi": true,
     "FlexRouting": true,
     "VehicleToStopHeuristics": true,
