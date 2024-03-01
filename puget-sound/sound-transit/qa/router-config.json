@@ -72,14 +72,14 @@
       {
         "type": "stop-time-updater",
         "frequencySec": 30,
-        "url": "https://api.soundtransit.org/pims/public/v1.0.0/realtime/current/pb/TripUpdate.pb",
+        "url": "https://api.soundtransit.org/pims/public/v1.0.0/realtime/current/pb/TripUpdate",
         "sourceType": "gtfs-http",
         "feedId": "40"
       },
       {
         "type": "vehicle-positions",
         "frequencySec": 30,
-        "url": "https://api.soundtransit.org/pims/public/v1.0.0/realtime/current/pb/VehiclePosition.pb",
+        "url": "https://api.soundtransit.org/pims/public/v1.0.0/realtime/current/pb/VehiclePosition",
         "sourceType": "gtfs-http",
         "feedId": "40"
       }
