@@ -1,5 +1,6 @@
 {
   "otpFeatures": {
+    "ActuatorAPI": true,
     "SandboxAPITransmodelApi": true,
     "SandboxAPILegacyGraphQLApi": true,
     "SandboxAPIMapboxVectorTilesApi": true,
