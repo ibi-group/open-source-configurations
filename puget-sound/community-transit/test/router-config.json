@@ -1,13 +1,13 @@
 {
   "flex": {
-    "maxAccessWalkDuration": "10m",
-    "maxEgressWalkDuration": "10m",
+    "maxAccessWalkDuration": "20m",
+    "maxEgressWalkDuration": "20m",
     "maxFlexTripDuration": "150m"
   },
   "transit": {
     "dynamicSearchWindow": {
       "minWindow": "2h",
-      "maxWindow": "5h"
+      "maxWindow": "8h"
     }
   },
   "routingDefaults": {
@@ -34,7 +34,7 @@
         "inaccessibleCost": 3600
       }
     },
-    "walk": { "reluctance": 6 },
+    "walk": { "reluctance": 20 },
     "transferPenalty": 10000,
     "itineraryFilters": {
       "accessibilityScore": true,
