@@ -6,8 +6,8 @@
   },
   "transit": {
     "dynamicSearchWindow": {
-      "minWindow": "2h",
-      "maxWindow": "8h"
+      "minWindow": "8h",
+      "maxWindow": "10h"
     }
   },
   "routingDefaults": {
