@@ -38,7 +38,7 @@
     "transferPenalty": 10000,
     "itineraryFilters": {
       "accessibilityScore": true,
-      "parkAndRideDurationRatio": 0.9,
+      "parkAndRideDurationRatio": 0.3,
       "bikeRentalDistanceRatio": 0.9,
       "nonTransitGeneralizedCostLimit": "0 + 1.5 x"
     },
