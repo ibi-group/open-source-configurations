@@ -1,8 +1,8 @@
 {
   "transit": {
     "dynamicSearchWindow": {
-      "minWindow": "2h",
-      "maxWindow": "5h"
+      "minWindow": "8h",
+      "maxWindow": "10h"
     }
   },
   "routingDefaults": {
@@ -24,7 +24,7 @@
       }
     },
     "walk": {
-      "reluctance": 6
+      "reluctance": 20
     },
     "transferPenalty": 10000,
     "itineraryFilters": {
