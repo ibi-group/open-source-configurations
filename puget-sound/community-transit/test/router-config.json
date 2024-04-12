@@ -13,6 +13,7 @@
   "routingDefaults": {
     "accessEgress": {
       "penalty": {
+        "car-to-park" : { "timePenalty": "10m + 1.5t", "costFactor": 2.5 },
         "FLEXIBLE" : {
           "timePenalty" : "10m + 1.3t",
           "costFactor" : 1.2
