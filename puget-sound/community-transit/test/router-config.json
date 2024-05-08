@@ -22,9 +22,9 @@
     },
     "transferSlack": "300s",
     "boardSlack": "300s",
-    "car": { 
+    "car": {
       "speed": 25,
-      "reluctance" 5
+      "reluctance": 5
     },
     "wheelchairAccessibility": {
       "trip": {
