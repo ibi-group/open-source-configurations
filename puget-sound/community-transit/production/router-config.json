@@ -27,7 +27,6 @@
     "walk": {
       "reluctance": 20
     },
-    "transferPenalty": 10000,
     "itineraryFilters": {
       "accessibilityScore": true,
       "parkAndRideDurationRatio": 0.9,
