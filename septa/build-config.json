@@ -1,0 +1,15 @@
+{
+  "fares": "combine-interlined-legs",
+  "transferRequests": [
+    {
+      "modes": "WALK"
+    },
+    {
+      "modes": "WALK",
+      "wheelchairAccessibility": {
+        "enabled": true
+      }
+    }
+  ],
+  "subwayAccessTime": 2.5
+}
