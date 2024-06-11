@@ -20,51 +20,51 @@
   "updaters": [
     {
       "type": "real-time-alerts",
-      "frequencySec": 30,
+      "frequency": "30s",
       "url": "https://www3.septa.org/api/v2/gtfs-rt/bus/service-alerts/",
       "sourceType": "gtfs-rt-http",
       "feedId": "SEPTA"
     },
     {
       "type": "vehicle-positions",
-      "frequencySec": 10,
+      "frequency": "10s",
       "url": "https://www3.septa.org/api/v2/gtfs-rt/bus/vehicle-positions/",
       "sourceType": "gtfs-rt-http",
       "feedId": "SEPTA"
     },
     {
       "type": "stop-time-updater",
-      "frequencySec": 15,
+      "frequency": "15s",
       "sourceType": "gtfs-rt-http",
       "url": "https://www3.septa.org/api/v2/gtfs-rt/bus/trip-update/",
       "feedId": "SEPTA"
     },
     {
       "type": "real-time-alerts",
-      "frequencySec": 30,
+      "frequency": "30s",
       "url": "https://www3.septa.org/api/v2/gtfs-rt/rail/service-alerts/",
       "sourceType": "gtfs-rt-http",
       "feedId": "SEPTA-Rail"
     },
     {
       "type": "stop-time-updater",
-      "frequencySec": 15,
+      "frequency": "15s",
       "sourceType": "gtfs-rt-http",
       "url": "https://www3.septa.org/api/v2/gtfs-rt/rail/trip-update/",
       "feedId": "SEPTA-Rail"
     },
     {
       "type": "vehicle-positions",
-      "frequencySec": 10,
+      "frequency": "10s",
       "sourceType": "gtfs-rt-http",
       "url": "https://www3.septa.org/api/v2/gtfs-rt/rail/vehicle-positions/",
       "feedId": "SEPTA-Rail"
     },
     {
-      "type": "bike-rental",
+      "type": "vehicle-rental",
       "sourceType": "gbfs",
       "url": "https://gbfs.bcycle.com/bcycle_indego/gbfs.json",
-      "frequencySec": 30
+      "frequency": "15s"
     }
   ],
 
