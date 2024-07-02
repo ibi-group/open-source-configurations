@@ -11,5 +11,8 @@
       }
     }
   ],
+  "gtfsDefaults" : {
+    "blockBasedInterlining" : false
+  },
   "subwayAccessTime": 2.5
 }
