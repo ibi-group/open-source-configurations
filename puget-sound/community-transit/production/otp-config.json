@@ -1,10 +1,11 @@
 {
-  "otpFeatures" : {
-  	"SandboxAPITransmodelApi": true,
+  "otpFeatures": {
+    "LegacyRestApi": true,
+    "SandboxAPITransmodelApi": true,
     "ActuatorAPI": true,
     "SandboxAPILegacyGraphQLApi": true,
-    "SandboxAPIGeocoder": true, 
-  	"SandboxAPIMapboxVectorTilesApi": true,
+    "SandboxAPIGeocoder": true,
+    "SandboxAPIMapboxVectorTilesApi": true,
     "FlexRouting": false,
     "VehicleToStopHeuristics": false,
     "OptimizeTransfers": true,
