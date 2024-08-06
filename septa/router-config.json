@@ -83,7 +83,7 @@
       "type": "Station",
       "mapper": "Digitransit",
       "maxZoom": 20,
-      "minZoom": 2,
+      "minZoom": 14,
       "cacheMaxSeconds": 600
     },
     {
