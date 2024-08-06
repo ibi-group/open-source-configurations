@@ -68,8 +68,9 @@
     }
   ],
 
-  "vectorTileLayers": [
-    {
+  "vectorTiles": {
+    "layers": [
+      {
       "name": "stops",
       "type": "Stop",
       "mapper": "Digitransit",
@@ -111,4 +112,5 @@
       "expansionFactor": 0.25
     }
   ]
+  }
 }
