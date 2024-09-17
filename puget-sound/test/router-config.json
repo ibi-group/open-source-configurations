@@ -13,7 +13,7 @@
   "routingDefaults": {
     "transferSlack": "300s",
     "boardSlack": "300s",
-    "car": { "speed": 25 },
+    "car": { "accelerationSpeed": 2.0 },
     "wheelchairAccessibility": {
       "trip": {
         "onlyConsiderAccessible": false,
@@ -33,7 +33,8 @@
       "parkAndRideDurationRatio": 0.9,
       "bikeRentalDistanceRatio": 0.9,
       "nonTransitGeneralizedCostLimit": "0 + 1.5 x"
-    },
+    }
+  },
     "vectorTiles": {
       "layers": [
         {

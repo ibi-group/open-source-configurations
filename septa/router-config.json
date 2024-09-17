@@ -22,20 +22,17 @@
       "type": "real-time-alerts",
       "frequency": "30s",
       "url": "https://www3.septa.org/api/v2/gtfs-rt/bus/service-alerts/",
-      "sourceType": "gtfs-rt-http",
       "feedId": "SEPTA"
     },
     {
       "type": "vehicle-positions",
       "frequency": "10s",
       "url": "https://www3.septa.org/api/v2/gtfs-rt/bus/vehicle-positions/",
-      "sourceType": "gtfs-rt-http",
       "feedId": "SEPTA"
     },
     {
       "type": "stop-time-updater",
       "frequency": "15s",
-      "sourceType": "gtfs-rt-http",
       "url": "https://www3.septa.org/api/v2/gtfs-rt/bus/trip-update/",
       "feedId": "SEPTA"
     },
@@ -43,20 +40,17 @@
       "type": "real-time-alerts",
       "frequency": "30s",
       "url": "https://www3.septa.org/api/v2/gtfs-rt/rail/service-alerts/",
-      "sourceType": "gtfs-rt-http",
       "feedId": "SEPTA-Rail"
     },
     {
       "type": "stop-time-updater",
       "frequency": "15s",
-      "sourceType": "gtfs-rt-http",
       "url": "https://www3.septa.org/api/v2/gtfs-rt/rail/trip-update/",
       "feedId": "SEPTA-Rail"
     },
     {
       "type": "vehicle-positions",
       "frequency": "10s",
-      "sourceType": "gtfs-rt-http",
       "url": "https://www3.septa.org/api/v2/gtfs-rt/rail/vehicle-positions/",
       "feedId": "SEPTA-Rail"
     },
@@ -71,46 +65,46 @@
   "vectorTiles": {
     "layers": [
       {
-      "name": "stops",
-      "type": "Stop",
-      "mapper": "Digitransit",
-      "maxZoom": 20,
-      "minZoom": 14,
-      "cacheMaxSeconds": 600
-    },
-    {
-      "name": "stations",
-      "type": "Station",
-      "mapper": "Digitransit",
-      "maxZoom": 20,
-      "minZoom": 14,
-      "cacheMaxSeconds": 600
-    },
-    {
-      "name": "rentalVehicles",
-      "type": "VehicleRentalVehicle",
-      "mapper": "Digitransit",
-      "maxZoom": 20,
-      "minZoom": 2,
-      "cacheMaxSeconds": 60
-    },
-    {
-      "name": "rentalStations",
-      "type": "VehicleRentalStation",
-      "mapper": "Digitransit",
-      "maxZoom": 20,
-      "minZoom": 2,
-      "cacheMaxSeconds": 600
-    },
-    {
-      "name": "vehicleParking",
-      "type": "VehicleParking",
-      "mapper": "Digitransit",
-      "maxZoom": 20,
-      "minZoom": 10,
-      "cacheMaxSeconds": 60,
-      "expansionFactor": 0.25
-    }
-  ]
+        "name": "stops",
+        "type": "Stop",
+        "mapper": "Digitransit",
+        "maxZoom": 20,
+        "minZoom": 14,
+        "cacheMaxSeconds": 600
+      },
+      {
+        "name": "stations",
+        "type": "Station",
+        "mapper": "Digitransit",
+        "maxZoom": 20,
+        "minZoom": 14,
+        "cacheMaxSeconds": 600
+      },
+      {
+        "name": "rentalVehicles",
+        "type": "VehicleRentalVehicle",
+        "mapper": "Digitransit",
+        "maxZoom": 20,
+        "minZoom": 2,
+        "cacheMaxSeconds": 60
+      },
+      {
+        "name": "rentalStations",
+        "type": "VehicleRentalStation",
+        "mapper": "Digitransit",
+        "maxZoom": 20,
+        "minZoom": 2,
+        "cacheMaxSeconds": 600
+      },
+      {
+        "name": "vehicleParking",
+        "type": "VehicleParking",
+        "mapper": "Digitransit",
+        "maxZoom": 20,
+        "minZoom": 10,
+        "cacheMaxSeconds": 60,
+        "expansionFactor": 0.25
+      }
+    ]
   }
 }

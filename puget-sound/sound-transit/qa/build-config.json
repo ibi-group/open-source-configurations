@@ -2,9 +2,11 @@
   "transitModelTimeZone": "America/Los_Angeles",
   "fares": "orca",
   "stopConsolidationFile": "shared_stops.csv",
-  "islandWithoutStopsMaxSize": 300,
-  "islandWithStopsMaxSize": 300,
   "boardingLocationTags": [],
+  "islandPruning": {
+    "islandWithoutStopsMaxSize": 300,
+    "islandWithStopsMaxSize": 300
+  },
   "transferRequests": [
     {
       "modes": "WALK"

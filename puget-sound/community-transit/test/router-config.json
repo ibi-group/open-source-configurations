@@ -13,16 +13,16 @@
   "routingDefaults": {
     "accessEgress": {
       "penalty": {
-        "car-to-park" : { "timePenalty": "5m + 5t", "costFactor": 5 },
-        "FLEXIBLE" : {
-          "timePenalty" : "10m + 1.3t",
-          "costFactor" : 1.2
+        "car-to-park": { "timePenalty": "5m + 5t", "costFactor": 5 },
+        "FLEXIBLE": {
+          "timePenalty": "10m + 1.3t",
+          "costFactor": 1.2
         }
       }
     },
     "car": {
-      "speed": 25,
-      "reluctance": 5
+      "reluctance": 5,
+      "accelerationSpeed": 2.0
     },
     "wheelchairAccessibility": {
       "trip": {
@@ -42,7 +42,8 @@
       "parkAndRideDurationRatio": 0.9,
       "bikeRentalDistanceRatio": 0.9,
       "nonTransitGeneralizedCostLimit": "0 + 1.5 x"
-    },
+    }
+  },
     "vectorTiles": {
       "layers": [
         {
