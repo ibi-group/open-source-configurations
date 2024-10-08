@@ -8,6 +8,7 @@
     "OptimizeTransfers": true,
     "FloatingBike": true,
     "SandboxAPIParkAndRideApi": true,
-    "MinimumTransferTimeIsDefinitive": true
+    "MinimumTransferTimeIsDefinitive": true,
+    "ExtraTransferLegOnSameStop": true
   }
 }
