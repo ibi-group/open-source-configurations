@@ -3,7 +3,7 @@
   "fares": "orca",
   "islandPruning": {
     "islandWithoutStopsMaxSize": 300,
-    "islandWithStopsMaxSize": 300
+    "islandWithStopsMaxSize": 30 // Seattle has many actual islands, so don't make this too aggressive
   },
   "stopConsolidationFile": "shared_stops.csv",
   "boardingLocationTags": [],
