@@ -1,10 +1,13 @@
 {
+  "areaVisibility": true,
   "transitModelTimeZone": "America/Los_Angeles",
   "fares": "orca",
   "stopConsolidationFile": "shared_stops.csv",
-  "islandWithoutStopsMaxSize": 300,
-  "islandWithStopsMaxSize": 300,
   "boardingLocationTags": [],
+  "islandPruning": {
+    "islandWithoutStopsMaxSize": 300,
+    "islandWithStopsMaxSize": 30 // Seattle has many actual islands, so don't make this too aggressive
+  },
   "transferRequests": [
     {
       "modes": "WALK"

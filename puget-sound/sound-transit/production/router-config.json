@@ -10,7 +10,7 @@
     "accessEgress": {
       "maxStopCount": 100
     },
-    "car": { "speed": 25 },
+    "car": { "accelerationSpeed": 2.0 },
     "wheelchairAccessibility": {
       "trip": {
         "onlyConsiderAccessible": false,

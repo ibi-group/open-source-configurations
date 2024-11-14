@@ -1,14 +1,12 @@
 {
   "otpFeatures": {
     "LegacyRestApi": true,
-    "ActuatorAPI": true,
     "SandboxAPIGeocoder": true,
     "SandboxAPIMapboxVectorTilesApi": true,
     "FlexRouting": false,
-    "OptimizeTransfers": true,
-    "FloatingBike": true,
+    "OptimizeTransfers": false,
+    "FloatingBike": false,
     "SandboxAPIParkAndRideApi": true,
-    "MinimumTransferTimeIsDefinitive": true,
-    "ExtraTransferLegOnSameStop": true
+    "ParallelRouting": true
   }
 }

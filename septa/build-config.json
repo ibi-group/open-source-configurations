@@ -1,7 +1,5 @@
 {
-  "transitModelTimeZone": "America/Los_Angeles",
-  "fares": "orca",
-  "boardingLocationTags": [],
+  "fares": "combine-interlined-legs",
   "transferRequests": [
     {
       "modes": "WALK"
@@ -12,5 +10,9 @@
         "enabled": true
       }
     }
-  ]
+  ],
+  "gtfsDefaults" : {
+    "blockBasedInterlining" : false
+  },
+  "subwayAccessTime": 2.5
 }

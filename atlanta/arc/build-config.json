@@ -1,0 +1,13 @@
+{
+  "osmDefaults": {
+    "osmTagMapping": "atlanta"
+  },
+  "osmNaming": "sidewalks",
+  "fares": "atlanta",
+  "transitModelTimeZone": "America/New_York",
+  "areaVisibility": true,
+  "transferRequests": [
+    { "modes": "WALK" },
+    { "modes": "WALK", "wheelchairAccessibility": { "enabled": true } }
+  ]
+}

@@ -9,7 +9,8 @@
     "transferSlack": "300s",
     "boardSlack": "300s",
     "car": {
-      "speed": 25
+      "accelerationSpeed": 2.0,
+      "reluctance": 5
     },
     "wheelchairAccessibility": {
       "trip": {
@@ -26,12 +27,16 @@
     "walk": {
       "reluctance": 20
     },
-    "transferPenalty": 10000,
     "itineraryFilters": {
       "accessibilityScore": true,
       "parkAndRideDurationRatio": 0.9,
       "bikeRentalDistanceRatio": 0.9,
       "nonTransitGeneralizedCostLimit": "0 + 1.5 x"
+    },
+    "accessEgress": {
+      "penalty": {
+        "car-to-park": { "timePenalty": "5m + 5t", "costFactor": 5 }
+      }
     }
   },
   "vectorTiles": {

@@ -10,7 +10,7 @@
       "maxStopCount": 200
     },
     "transferSlack": 0,
-    "car": { "speed": 25 },
+    "car": { "accelerationSpeed": 2.0 },
     "wheelchairAccessibility": {
       "trip": {
         "onlyConsiderAccessible": false,
@@ -66,20 +66,17 @@
         "minZoom": 2,
         "cacheMaxSeconds": 60
       }
-    ],
+    ]
+  },
     "updaters": [
       {
         "type": "stop-time-updater",
-        "frequencySec": 30,
         "url": "https://api.soundtransit.org/pims/public/v1.0.0/realtime/current/pb/TripUpdate",
-        "sourceType": "gtfs-http",
         "feedId": "40"
       },
       {
         "type": "vehicle-positions",
-        "frequencySec": 30,
         "url": "https://api.soundtransit.org/pims/public/v1.0.0/realtime/current/pb/VehiclePosition",
-        "sourceType": "gtfs-http",
         "feedId": "40"
       }
     ]
