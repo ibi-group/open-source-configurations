@@ -68,23 +68,22 @@
       }
     ]
   },
-    "updaters": [
-      {
-        "type": "stop-time-updater",
-        "url": "https://api.soundtransit.org/pims/public/v1.0.0/realtime/current/pb/TripUpdate",
-        "feedId": "40"
-      },
-      {
-        "type": "vehicle-positions",
-        "url": "https://api.soundtransit.org/pims/public/v1.0.0/realtime/current/pb/VehiclePosition",
-        "feedId": "40"
-      },
-      {
-        "type": "real-time-alerts",
-        "frequency": "20s",
-        "url": "https://st-service-alerts-test.s3.amazonaws.com/alerts.pb",
-        "feedId": "40"
-      }
-    ]
-  }
+  "updaters": [
+    {
+      "type": "stop-time-updater",
+      "url": "https://api.soundtransit.org/pims/public/v1.0.0/realtime/current/pb/TripUpdate",
+      "feedId": "40"
+    },
+    {
+      "type": "vehicle-positions",
+      "url": "https://api.soundtransit.org/pims/public/v1.0.0/realtime/current/pb/VehiclePosition",
+      "feedId": "40"
+    },
+    {
+      "type": "real-time-alerts",
+      "frequency": "20s",
+      "url": "https://st-service-alerts-test.s3.amazonaws.com/alerts.pb",
+      "feedId": "40"
+    }
+  ]
 }
