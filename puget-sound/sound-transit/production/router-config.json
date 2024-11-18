@@ -67,5 +67,14 @@
         "cacheMaxSeconds": 60
       }
     ]
+  },
+  "updaters": [
+      {
+        "type": "real-time-alerts",
+        "frequency": "20s",
+        "url": "https://st-service-alerts-prod.s3.amazonaws.com/alerts.pb",
+        "feedId": "40"
+      }
+    ]
   }
 }
