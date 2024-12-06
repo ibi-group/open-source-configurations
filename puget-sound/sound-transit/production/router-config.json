@@ -26,8 +26,8 @@
     "walk": { "reluctance": 20 },
     "itineraryFilters": {
       "accessibilityScore": true,
-      "parkAndRideDurationRatio": 0.9,
-      "bikeRentalDistanceRatio": 0.9,
+      "parkAndRideDurationRatio": 0.15,
+      "bikeRentalDistanceRatio": 0.15,
       "nonTransitGeneralizedCostLimit": "0 + 1.5 x"
     }
   },
