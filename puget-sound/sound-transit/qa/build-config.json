@@ -1,5 +1,5 @@
 {
-  "areaVisibility": true,
+  "areaVisibility": false,
   "transitModelTimeZone": "America/Los_Angeles",
   "fares": "orca",
   "stopConsolidationFile": "shared_stops.csv",
