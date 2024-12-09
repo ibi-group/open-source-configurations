@@ -3,6 +3,7 @@
   "fares": "orca",
   "stopConsolidationFile": "shared_stops.csv",
   "boardingLocationTags": [],
+  "osmNaming": "sidewalks",
   "islandPruning": {
     "islandWithoutStopsMaxSize": 300,
     "islandWithStopsMaxSize": 30 // Seattle has many actual islands, so don't make this too aggressive
