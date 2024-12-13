@@ -7,7 +7,6 @@
   },
   "routingDefaults": {
     "transferSlack": "300s",
-    "boardSlack": "300s",
     "car": {
       "accelerationSpeed": 2.0,
       "reluctance": 5
