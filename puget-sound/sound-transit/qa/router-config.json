@@ -1,7 +1,7 @@
 {
   "transit": {
     "dynamicSearchWindow": {
-      "minWindow": "8h",
+      "minWindow": "4h",
       "maxWindow": "10h"
     }
   },
@@ -23,7 +23,7 @@
         "inaccessibleCost": 3600
       }
     },
-    "walk": { "reluctance": 20 },
+    "walk": { "reluctance": 5 },
     "itineraryFilters": {
       "accessibilityScore": true,
       "parkAndRideDurationRatio": 0.9,
