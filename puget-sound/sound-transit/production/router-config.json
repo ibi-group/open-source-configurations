@@ -1,7 +1,7 @@
 {
   "transit": {
     "dynamicSearchWindow": {
-      "minWindow": "8h",
+      "minWindow": "1h",
       "maxWindow": "10h"
     }
   },
@@ -26,7 +26,7 @@
       }
     },
     "walk": {
-      "reluctance": 20
+      "reluctance": 5
     },
     "itineraryFilters": {
       "accessibilityScore": true,
