@@ -1,0 +1,144 @@
+{
+  "rideHailingServices": [
+    {
+      "type": "uber-car-hailing",
+      "clientId": "<INSERT YOURS HERE>",
+      "clientSecret": "<INSERT YOURS HERE>",
+      "wheelchairAccessibleProductId": "<INSERT YOURS HERE>",
+      "wheelchairAccessibleRideType": "<INSERT YOURS HERE>"
+    }
+  ],
+  "routingDefaults": {
+    "boardSlack": "0M",
+    "alightSlack": "0M",
+    "unpreferredCost": "8h + 1.00 t",
+    "transferSlack": 180,
+    "waitReluctance": 0.9,
+    "walk": {
+      "reluctance": 2.75,
+      "stairsReluctance": 1.65,
+      "waitReluctance": 0.9
+    },
+    "numItineraries": 3,
+    "disableAlertFiltering": true,
+    "itineraryFilters": {
+      "nonTransitGeneralizedCostLimit": "0 + 1.0 x"
+    },
+    "car": {
+      "reluctance": 16
+    },
+    "invalidDateStrategy": "USE_CURRENT"
+  },
+  "transit": {
+    "maxNumberOfTransfers": 4,
+    "dynamicSearchWindow": {
+      "minTransitTimeCoefficient": 0.5,
+      "minWaitTimeCoefficient": 0.5,
+      "minWindow": "8h",
+      "maxWindow": "8h"
+    }
+  },
+  "updaters": [
+    {
+      "type": "real-time-alerts",
+      "frequencySec": 20,
+      "url": "<INSERT YOURS HERE>",
+      "feedId": "TriMet"
+    },
+    {
+      "type": "stop-time-updater",
+      "frequencySec": 60,
+      "sourceType": "gtfs-http",
+      "url": "http://trimet.org/transweb/ws/V1/TripUpdate",
+      "feedId": "TriMet"
+    },
+    {
+      "type": "vehicle-positions",
+      "frequencySec": 60,
+      "sourceType": "gtfs-http",
+      "url": "<INSERT YOURS HERE>",
+      "feedId": "TriMet"
+    },
+    {
+      "type": "vehicle-rental",
+      "sourceType": "gbfs",
+      "url": "https://gbfs.biketownpdx.com/gbfs/gbfs.json",
+      "frequencySec": 10
+    },
+    {
+      "type": "vehicle-rental",
+      "frequencySec": 60,
+      "network": "LIME",
+      "sourceType": "gbfs",
+      "url": "https://data.lime.bike/api/partners/v2/gbfs/portland/gbfs.json"
+    },
+    {
+      "type": "vehicle-rental",
+      "frequencySec": 60,
+      "network": "SPIN",
+      "sourceType": "gbfs",
+      "url": "https://gbfs.spin.pm/api/gbfs/v2_2/portland/gbfs"
+    },
+    {
+      "type": "vehicle-rental",
+      "frequencySec": 60,
+      "network": "BIRD",
+      "sourceType": "gbfs",
+      "url": "https://mds.bird.co/gbfs/v2/public/portland/gbfs.json"
+    }
+  ],
+  "vectorTiles": {
+    "layers": [
+      {
+        "name": "stops",
+        "type": "Stop",
+        "mapper": "Digitransit",
+        "maxZoom": 20,
+        "minZoom": 4,
+        "cacheMaxSeconds": 600,
+        "filter": "sunday-to-sunday-service-week"
+      },
+      {
+        "name": "areaStops",
+        "type": "AreaStop",
+        "mapper": "OTPRR",
+        "maxZoom": 30,
+        "minZoom": 8,
+        "cacheMaxSeconds": 600
+      },
+      {
+        "name": "stations",
+        "type": "Station",
+        "mapper": "Digitransit",
+        "maxZoom": 20,
+        "minZoom": 2,
+        "cacheMaxSeconds": 600
+      },
+      {
+        "name": "rentalVehicles",
+        "type": "VehicleRentalVehicle",
+        "mapper": "Digitransit",
+        "maxZoom": 20,
+        "minZoom": 2,
+        "cacheMaxSeconds": 60
+      },
+      {
+        "name": "rentalStations",
+        "type": "VehicleRentalStation",
+        "mapper": "Digitransit",
+        "maxZoom": 20,
+        "minZoom": 2,
+        "cacheMaxSeconds": 600
+      },
+      {
+        "name": "vehicleParking",
+        "type": "VehicleParking",
+        "mapper": "Digitransit",
+        "maxZoom": 20,
+        "minZoom": 10,
+        "cacheMaxSeconds": 60,
+        "expansionFactor": 0.25
+      }
+    ]
+  }
+}

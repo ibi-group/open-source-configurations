@@ -1,0 +1,17 @@
+{
+  "fares": {
+    "type": "combine-interlined-legs"
+  },
+  "transitModelTimeZone": "America/Los_Angeles",
+  "multiThreadElevationCalculations": true,
+  "elevationBucket": {
+    "accessKey": "<INSERT YOURS HERE>",
+    "secretKey": "<INSERT YOURS HERE>",
+    "bucketName": "ned13-ibi"
+  },
+  "osmDefaults": {
+    "osmTagMapping": "portland"
+  },
+  "includeEllipsoidToGeoidDifference": true,
+  "osmNaming": "portland"
+}
