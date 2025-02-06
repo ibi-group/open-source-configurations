@@ -74,5 +74,127 @@
         "cacheMaxSeconds": 60
       }
     ]
-  }
+  },
+  "updaters": [
+    {
+      "type": "real-time-alerts",
+      "frequency": "20s",
+      "url": "https://st-service-alerts-prod.s3.amazonaws.com/alerts.pb",
+      "feedId": "40"
+    },
+    {
+      "type": "vehicle-rental",
+      "frequency": "20s",
+      "sourceType": "gbfs",
+      "url": "https://mds.bird.co/gbfs/v2/public/seattle-washington/gbfs.json"
+    },
+    {
+      "type": "vehicle-rental",
+      "frequency": "20s",
+      "sourceType": "gbfs",
+      "url": "https://data.lime.bike/api/partners/v1/gbfs/seattle/gbfs.json"
+    },
+    {
+      "type": "vehicle-rental",
+      "frequency": "20s",
+      "sourceType": "gbfs",
+      "url": "https://mds.linkyour.city/gbfs/us_wa_seattle/gbfs.json"
+    },
+    {
+      "type": "real-time-alerts",
+      "frequency": "20s",
+      "url": "http://s3.amazonaws.com/commtrans-realtime-prod/alerts.pb",
+      "feedId": "CommTrans"
+    },
+    {
+      "type": "stop-time-updater",
+      "frequency": "20s",
+      "url": "http://s3.amazonaws.com/commtrans-realtime-prod/tripupdates.pb",
+      "feedId": "CommTrans"
+    },
+    {
+      "type": "vehicle-positions",
+      "frequency": "20s",
+      "url": "http://s3.amazonaws.com/commtrans-realtime-prod/vehiclepositions.pb",
+      "feedId": "CommTrans"
+    },
+    {
+      "type": "stop-time-updater",
+      "frequency": "20s",
+      "url": "https://s3.amazonaws.com/kcm-alerts-realtime-prod/tripupdates.pb",
+      "feedId": "kcm"
+    },
+    {
+      "type": "real-time-alerts",
+      "frequency": "20s",
+      "url": "https://s3.amazonaws.com/kcm-alerts-realtime-prod/alerts.pb",
+      "feedId": "kcm"
+    },
+    {
+      "type": "vehicle-positions",
+      "frequency": "20s",
+      "url": "https://s3.amazonaws.com/kcm-alerts-realtime-prod/vehiclepositions.pb",
+      "feedId": "kcm"
+    },
+    {
+      "type": "stop-time-updater",
+      "frequency": "20s",
+      "url": "http://www.skagittransit.org/gtfs/GTFS_TripUpdates.pb",
+      "feedId": "Skagit"
+    },
+    {
+      "type": "real-time-alerts",
+      "frequency": "20s",
+      "url": "http://www.skagittransit.org/gtfs/GTFS_ServiceAlerts.pb",
+      "feedId": "Skagit"
+    },
+    {
+      "type": "vehicle-positions",
+      "frequency": "20s",
+      "url": "https://www.skagittransit.org/gtfs/GTFS_VehiclePositions.pb",
+      "feedId": "Skagit"
+    },
+    {
+      "type": "stop-time-updater",
+      "frequency": "20s",
+      "url": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/trip-updates-for-agency/40.pb?key=cc1bd3b1-15a9-446b-a095-0b56aac88819",
+      "feedId": "40"
+    },
+    {
+      "type": "vehicle-positions",
+      "frequency": "20s",
+      "url": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/vehicle-positions-for-agency/40.pb?key=cc1bd3b1-15a9-446b-a095-0b56aac88819",
+      "feedId": "40"
+    },
+    {
+      "type": "vehicle-positions",
+      "frequency": "20s",
+      "url": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/vehicle-positions-for-agency/95.pb?key=cc1bd3b1-15a9-446b-a095-0b56aac88819",
+      "feedId": "95"
+    },
+    {
+      "type": "vehicle-positions",
+      "frequency": "20s",
+      "url": "https://bustracker.ridewta.com/gtfsrt/vehicles",
+      "feedId": "Whatcom"
+    },
+    {
+      "type": "stop-time-updater",
+      "frequency": "20s",
+      "url": "https://bustracker.ridewta.com/gtfsrt/trips",
+      "feedId": "Whatcom"
+    },
+    {
+      "type": "real-time-alerts",
+      "frequency": "20s",
+      "url": "https://bustracker.ridewta.com/gtfsrt/alerts",
+      "feedId": "Whatcom"
+    },
+    {
+      "type": "stop-time-updater",
+      "frequency": "20s",
+      "url": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/trip-updates-for-agency/95.pb?key=cc1bd3b1-15a9-446b-a095-0b56aac88819",
+      "feedId": "95"
+    }
+  ]
 }
