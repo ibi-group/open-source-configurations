@@ -1,0 +1,8 @@
+{
+  "otpFeatures" : {
+    "FlexRouting": true,
+    "ParallelRouting": true,
+    "SandboxAPIParkAndRideApi": true,
+    "OptimizeTransfers": true
+  }
+}
