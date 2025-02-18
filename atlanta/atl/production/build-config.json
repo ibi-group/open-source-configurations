@@ -2,7 +2,7 @@
   "osmDefaults": {
     "osmTagMapping": "atlanta"
   },
-  "fares": "atlanta",
+  "fares": "off",
   "transitModelTimeZone": "America/New_York",
   "areaVisibility": true,
   "transferRequests": [
