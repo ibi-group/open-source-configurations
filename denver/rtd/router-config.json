@@ -12,21 +12,21 @@
     {
       "type": "vehicle-positions",
       "sourceType": "gtfs-http",
-      "url": "https://www.rtd-denver.com/files/gtfs-rt/VehiclePosition.pb",
+      "url": "https://nodejs-prod.rtd-denver.com/api/download/gtfs-rt/VehiclePosition.pb",
       "feedId": "10",
       "frequencySec": 60
     },
     {
       "type": "stop-time-updater",
       "frequencySec": 30,
-      "url": "https://www.rtd-denver.com/files/gtfs-rt/TripUpdate.pb",
+      "url": "https://nodejs-prod.rtd-denver.com/api/download/gtfs-rt/TripUpdate.pb",
       "sourceType": "gtfs-http",
       "feedId": "10"
     },
     {
       "type": "real-time-alerts",
       "frequencySec": 30,
-      "url": "https://www.rtd-denver.com/files/gtfs-rt/Alerts.pb",
+      "url": "https://nodejs-prod.rtd-denver.com/api/download/gtfs-rt/Alerts.pb",
       "feedId": "10"
     },
     {
