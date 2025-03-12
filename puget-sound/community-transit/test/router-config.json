@@ -11,6 +11,7 @@
     }
   },
   "routingDefaults": {
+    "transferSlack": "180s",
     "accessEgress": {
       "penalty": {
         "car-to-park": { "timePenalty": "5m + 5t", "costFactor": 5 },
