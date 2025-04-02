@@ -6,7 +6,7 @@
     }
   },
   "routingDefaults": {
-    "transferSlack": "300s",
+    "transferSlack": "180s",
     "car": {
       "accelerationSpeed": 2.0,
       "reluctance": 5
