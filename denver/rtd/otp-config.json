@@ -1,5 +1,6 @@
 {
-  "otpFeatures" : {
+  "otpFeatures": {
+    "ActuatorAPI": true,
     "FlexRouting": true,
     "LegacyRestApi": true,
     "ParallelRouting": true,

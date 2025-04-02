@@ -1,5 +1,6 @@
 {
   "otpFeatures": {
+    "ActuatorAPI": true,
     "LegacyRestApi": true,
     "SandboxAPIMapboxVectorTilesApi": true,
     "SandboxAPIGeocoder": true,
