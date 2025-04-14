@@ -1,6 +1,5 @@
 {
   "otpFeatures": {
-    "LegacyRestApi": true,
     "ExtraTransferLegOnSameStop": true,
     "ActuatorAPI": true,
     "FlexRouting": false,

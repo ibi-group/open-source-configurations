@@ -1,7 +1,6 @@
 {
   "otpFeatures": {
     "ActuatorAPI": true,
-    "LegacyRestApi": true,
     "ExtraTransferLegOnSameStop": true,
     "SandboxAPIMapboxVectorTilesApi": true,
     "FlexRouting": true,

@@ -2,7 +2,6 @@
   "otpFeatures": {
     "ActuatorAPI": true,
     "FlexRouting": true,
-    "LegacyRestApi": true,
     "ParallelRouting": true,
     "FaresV2": true,
     "SandboxAPIParkAndRideApi": true,
