@@ -1,7 +1,7 @@
 title: TriMet Call Taker/Field Trip
 api:
   host: <INSERT YOURS HERE>
-  path: /otp2/routers/default/
+  path: /otp/routers/default/
   v2: true
 # datastoreUrl: http://localhost:9000
 datastoreUrl: <INSERT YOURS HERE>
@@ -319,7 +319,7 @@ map:
 
     - type: otp2
       layers:
-        - type: stops
+        - type: OTP-UI-stopsAndStations
           initiallyVisible: true
         - type: rentalVehicles
           network: BIRD
@@ -341,7 +341,7 @@ map:
 
 geocoder:
   baseUrl: https://ws.trimet.org/peliaswrap/v1
-  layers: address,venue,street,intersection,stops,station
+  layers: ""
   maxNearbyStops: 6
   type: PELIAS
   boundary:
