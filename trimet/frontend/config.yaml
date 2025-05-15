@@ -295,6 +295,8 @@ map:
   baseLayerButtons: true
   baseLayersInitial: 0 # index of the array below -- 0 == Streets, 1 == Aerials, etc...
 
+  forceDisplayEndpointsPopup: true
+
   # Base layers for default map
   baseLayers:
     - type: streets
