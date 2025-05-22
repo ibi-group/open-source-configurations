@@ -1,0 +1,275 @@
+# react-router config, for URL routing (not to be confused with multimodal/OTP routing)
+#reactRouter:
+# If app is to be deployed to a URL subdirectory (e.g. http://foo.bar/app), specify the path here:
+#basename: map
+
+branding: trimet
+homeTimezone: America/Los_Angeles
+title: TriMet
+
+# Default OTP API
+api:
+  host: <INSERT YOURS HERE>
+  # host: http://localhost:8001 # For testing against a local OTP instance
+  path: /otp/routers/default
+  v2: true
+
+# Enabled multimodal routing types (e.g. interary, profile)
+routingTypes:
+  - key: ITINERARY
+    text: Exact Time
+
+# Show/hide elevation profile chart for walk/bike legs
+elevationProfile: true
+
+# Provide a list of operators to enhance the user experience for multi-agency
+# implementations. The order of the agencies will dictate the order that routes
+# appear in the route viewer. Also, optionally provide operator logos to appear
+# in narrative itinerary (matched on agency_id). Note: these logos will
+# override the values found in agency.txt#agency_branding_url.
+companies:
+  - id: lyft_pdx
+    label: BIKETOWN
+    overridePlaceNames: true
+    modes: BICYCLE
+  - id: BIRD
+    label: Bird
+    overridePlaceNames: true
+    modes: SCOOTER
+  - id: LIME
+    label: Lime
+    overridePlaceNames: true
+    modes: SCOOTER
+  - id: SPIN
+    label: Spin
+    overridePlaceNames: true
+    modes: SCOOTER
+  - id: uber
+    label: Uber
+
+co2:
+  enabled: true
+  cutoffPercentage: 101`
+
+transitOperators:
+  - feedId: TriMet
+    agencyId: TriMet:PSC
+    logo: https://d2tyb7byn1fef9.cloudfront.net/psc.png
+    order: 2
+  - feedId: TriMet
+    agencyId: TriMet:TRIMET
+    name: TriMet
+    order: 2
+    logo: http://news.trimet.org/wordpress/wp-content/uploads/2019/04/TriMet-logo-300x300.png
+  - feedId: TriMet
+    agencyId: TriMet:TRAM
+    order: 2
+    logo: https://d2tyb7byn1fef9.cloudfront.net/tram.png
+  - feedId: SMART
+    agencyId: "SMART:214"
+    name: SMART
+    logo: https://www.ridesmart.com/sites/all/themes/aha_compass_smart/logo.png
+    longNameSplitter: " - "
+    order: 9999
+  - feedId: CTRAN
+    agencyId: "CTRAN:C-TRAN"
+    name: C-TRAN
+    logo: https://d2tyb7byn1fef9.cloudfront.net/ctran.png
+    longNameSplitter: " - "
+    order: 9999
+
+### The persistence setting is used to enable the storage of places (home, work),
+### recent searches/places, user overrides, and favorite stops.
+persistence:
+  enabled: false
+
+# Map config
+map:
+  forceDisplayEndpointsPopup: true
+  # Enabled map views
+  views:
+    - type: DEFAULT
+      text: Map View
+    # Delete/uncomment the following block to disable the stylized map
+    #- type: STYLIZED
+    #  text: Network View
+
+  # Default map center
+  initLat: 45.52
+  initLon: -122.682
+
+  # closer-in zoom levels don't have any tiles that could be rendered by
+  # TriMet's tile service
+  maxZoom: 19
+
+  # Base layers for default map
+  baseLayers:
+    - url: https://tiles.trimet.org/styles/trimet/style.json
+
+  overlays:
+    - type: vehicles-one-route
+      name: Realtime Vehicles
+
+    - type: park-and-ride
+      name: Park & Ride Locations
+      maxTransitDistance: 1000
+      modes:
+        - CAR_PARK
+    - type: otp2
+      layers:
+        - type: OTP-UI-stopsAndStations
+          initiallyVisible: true
+        - type: areaStops
+          initiallyVisible: true
+          name: Flex Zones
+        - type: rentalVehicles
+          network: LIME
+        - type: rentalVehicles
+          network: lyft_pdx
+        - type: rentalStations
+          companies:
+            - lyft_pdx
+
+geocoder:
+  baseUrl: <INSERT YOURS HERE>
+  layers: ""
+  maxNearbyStops: 6
+  type: PELIAS
+  boundary:
+    rect:
+      minLon: -123.2034
+      maxLon: -122.135
+      minLat: 45.273
+      maxLat: 45.7445
+
+nearbyView:
+  radius: 500
+  useRouteViewSort: true
+  showShadowDotOnMapDrag: false
+  alwaysShowLongName: true
+  useArrivalTime: true
+
+routeViewer:
+  onlyShowCurrentServiceWeek: true
+  vehiclePositionRefreshSeconds: 10
+# Mode selector configuration
+modes:
+  modeSettingDefinitions:
+    - type: DROPDOWN
+      applicableMode: TRANSIT
+      default: 5
+      key: walkReluctance
+      # TODO: Tweak values
+      options:
+        - value: 0
+          text: More walking
+        - value: 5
+          text: Normal walking
+        - value: 15
+          text: Less walking
+  modeButtons:
+    - iconName: transit
+      key: transit
+      label: Transit
+      modes:
+        - mode: TRANSIT
+        - mode: FLEX
+          qualifier: ACCESS
+        - mode: FLEX
+          qualifier: EGRESS
+        - mode: FLEX
+          qualifier: DIRECT
+    - iconName: bicycle
+      key: bicycle
+      label: Bike
+      modes:
+        - mode: BICYCLE
+        - mode: BICYCLE
+          qualifier: RENT
+        - mode: SCOOTER
+          qualifier: RENT
+    - iconName: car
+      key: car
+      label: Car
+      company: UBER
+      modes:
+        - mode: CAR
+          qualifier: HAIL
+  initialState:
+    enabledModeButtons:
+      - transit
+  transitModes:
+    - mode: BUS
+      label: Bus
+    - mode: TRAM
+      label: MAX & Streetcar
+    - mode: RAIL
+      label: WES
+    - mode: GONDOLA
+      label: Aerial Tram
+
+  bicycleModes:
+    - mode: BICYCLE
+      label: Own Bike
+      iconWidth: 18
+    - mode: BICYCLE_RENT
+      label: BIKETOWN
+      iconWidth: 36
+
+# A list of private transportation operators. These are either companies that
+# provide rental vehicles or transportation network companies. Companies that
+# have multiple modes of transport should have all modes listed as a string with
+# commas. For example: BICYCLE_RENT,MICROMOBILITY_RENT.
+
+errorMessages:
+  - id: 404
+    msg: Sorry, we couldn't find any transit or rideshare/carshare options at the time and/or location you chose. Please try again later, or change the settings of your trip.
+    modes:
+      - CAR_HAIL
+      - CAR_RENT
+  - id: 405
+    msg: Sorry, we couldn't find any transit or rideshare/carshare options at the time and/or location you chose. Please try again later, or change the settings of your trip.
+    modes:
+      - CAR_HAIL
+      - CAR_RENT
+  - id: 480
+    msg: No available transit routes or rideshare/carshare service at origin.
+
+reportIssue:
+  mailto: <INSERT YOURS HERE>
+
+defaultQueryParams:
+  otp2: true
+
+# METRO UI
+itinerary:
+  customBatchUiBackground: true
+  groupByMode: true
+  groupTransitModes: true
+  hideSkeletons: true
+  mergeItineraries: true
+  showFirstResultByDefault: false
+  showHeaderText: false
+  onlyShowCountdownForRealtime: true
+  defaultSort: "DEPARTURETIME"
+  showScheduleDeviation: true
+
+dateTime:
+  timeFormat: h:mm a
+  dateFormat: MM/dd/yyyy
+
+# Custom strings
+language:
+  en-US:
+    components:
+      StopViewer:
+        viewNearby: View Realtime
+      NearbyView:
+        headsign: "To {destination}"
+    otpUi:
+      ModeSelector:
+        settings:
+          walkReluctance-label: Walk tolerance
+      PrintableItinerary:
+        TransitLeg:
+          alight: Alight at <strong>{place}</strong> (ID {stopId}) at <strong>{time, time, short}</strong>
