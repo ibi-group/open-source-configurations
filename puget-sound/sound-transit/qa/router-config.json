@@ -26,7 +26,7 @@
       }
     },
     "walk": {
-      "reluctance": 5
+      "reluctance": 2
     },
     "itineraryFilters": {
       "accessibilityScore": true,
