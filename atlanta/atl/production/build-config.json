@@ -2,6 +2,7 @@
   "osmDefaults": {
     "osmTagMapping": "atlanta"
   },
+  "osmNaming": "sidewalks",
   "fares": "off",
   "transitModelTimeZone": "America/New_York",
   "areaVisibility": true,
