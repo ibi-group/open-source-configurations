@@ -6,6 +6,7 @@
     "FlexRouting": true,
     "OptimizeTransfers": false,
     "FloatingBike": true,
+    "FaresV2": true,
     "SandboxAPIParkAndRideApi": true,
     "ParallelRouting": true,
     "MinimumTransferTimeIsDefinitive": true
