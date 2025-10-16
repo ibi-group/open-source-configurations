@@ -92,12 +92,6 @@
       "url": "https://data.lime.bike/api/partners/v1/gbfs/seattle/gbfs.json"
     },
     {
-      "type": "vehicle-rental",
-      "frequency": "20s",
-      "sourceType": "gbfs",
-      "url": "https://mds.linkyour.city/gbfs/us_wa_seattle/gbfs.json"
-    },
-    {
       "type": "real-time-alerts",
       "frequency": "20s",
       "url": "http://s3.amazonaws.com/commtrans-realtime-prod/alerts.pb",
