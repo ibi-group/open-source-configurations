@@ -186,6 +186,24 @@
       "frequency": "20s",
       "url": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/trip-updates-for-agency/95.pb?key=cc1bd3b1-15a9-446b-a095-0b56aac88819",
       "feedId": "95"
+    },
+    {
+      "type": "vehicle-positions",
+      "frequency": "20s",
+      "url": "https://kttracker.com/gtfsrt/vehicles",
+      "feedId": "Kitsap"
+    },
+    {
+      "type": "stop-time-updater",
+      "frequency": "20s",
+      "url": "https://kttracker.com/gtfsrt/trips",
+      "feedId": "Kitsap"
+    },
+    {
+      "type": "real-time-alerts",
+      "frequency": "20s",
+      "url": "https://cdn.simplifytransit.com/kitsap-transit/alerts/service-alerts.pb",
+      "feedId": "Kitsap"
     }
   ]
 }
