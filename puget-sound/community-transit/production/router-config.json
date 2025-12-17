@@ -1,7 +1,7 @@
 {
   "transit": {
     "dynamicSearchWindow": {
-      "minWindow": "8h",
+      "minWindow": "1h",
       "maxWindow": "10h"
     }
   },
