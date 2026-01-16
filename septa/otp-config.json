@@ -8,6 +8,8 @@
     "ParallelRouting": true,
     "SandboxAPIGeocoder": true,
     "SandboxAPIMapboxVectorTilesApi": true,
-    "SandboxAPIParkAndRideApi": true
+    "SandboxAPIParkAndRideApi": true,
+    "FaresV2": true
+
   }
 }
