@@ -1,4 +1,8 @@
 {
+   "flex": {
+    "maxFlexTripDuration" : "90m"
+
+  },
   "rideHailingServices": [
     {
       "type": "uber-car-hailing",
