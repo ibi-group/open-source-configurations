@@ -1,4 +1,9 @@
 {
+  "flex": {
+    "maxAccessWalkDuration": "20m",
+    "maxEgressWalkDuration": "20m",
+    "maxFlexTripDuration": "150m"
+  },
   "transit": {
     "dynamicSearchWindow": {
       "minWindow": "1h",
@@ -34,7 +39,11 @@
     },
     "accessEgress": {
       "penalty": {
-        "car-to-park": { "timePenalty": "5m + 5t", "costFactor": 5 }
+        "car-to-park": { "timePenalty": "5m + 5t", "costFactor": 5 },
+        "FLEXIBLE": {
+          "timePenalty": "10m + 1.3t",
+          "costFactor": 1.2
+        }
       }
     }
   },
