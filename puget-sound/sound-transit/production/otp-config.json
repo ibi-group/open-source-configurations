@@ -3,7 +3,7 @@
     "ActuatorAPI": true,
     "SandboxAPIGeocoder": true,
     "SandboxAPIMapboxVectorTilesApi": true,
-    "FlexRouting": true,
+    "FlexRouting": false,
     "OptimizeTransfers": true,
     "FloatingBike": true,
     "SandboxAPIParkAndRideApi": true,
