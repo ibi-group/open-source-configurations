@@ -12,7 +12,7 @@
     }
   ],
   "gtfsDefaults" : {
-    "blockBasedInterlining" : false
+    "blockBasedInterlining" : true
   },
   "subwayAccessTime": 0
 }
