@@ -5,7 +5,6 @@
     "islandWithoutStopsMaxSize": 300,
     "islandWithStopsMaxSize": 30
   },
-  "stopConsolidationFile": "shared_stops.csv",
   "boardingLocationTags": [],
   "osmNaming": "sidewalks",
   "transferRequests": [
