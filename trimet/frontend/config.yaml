@@ -362,6 +362,9 @@ nearbyView:
 routeViewer:
   maxRealtimeVehicleAge: 60
   vehiclePositionRefreshSeconds: 10
+  vehicleIconCaret:
+    width: 15
+    height: 10
 
 # Mode selector configuration
 modes:
