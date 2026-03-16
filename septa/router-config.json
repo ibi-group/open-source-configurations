@@ -1,4 +1,9 @@
 {
+  "flex": {
+    "maxAccessWalkDuration": "10m",
+    "maxEgressWalkDuration": "10m",
+    "maxFlexTripDuration" : "60m"
+  },
   "routingDefaults": {
     "transferSlack": 0,
     "wheelchairAccessibility": {
