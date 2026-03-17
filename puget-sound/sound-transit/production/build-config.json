@@ -8,7 +8,7 @@
   },
   "stopConsolidationFile": "shared_stops.csv",
   "boardingLocationTags": [],
-  "osmNaming": "sidewalks",
+  "osmNaming": "sidewalks-crosswalks",
   "transferRequests": [
     {
       "modes": "WALK"
