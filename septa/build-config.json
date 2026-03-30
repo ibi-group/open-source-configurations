@@ -1,5 +1,4 @@
 {
-  "fares": "combine-interlined-legs",
   "transferRequests": [
     {
       "modes": "WALK"
