@@ -11,7 +11,7 @@
 "maxFlexTripDuration" :"90m"
 },
 "routingDefaults":{
-"transferSlack":0,
+"transferSlack":300,
 "accessEgress":{
 "maxStopCount":100
 },
@@ -31,7 +31,7 @@
 }
 },
 "walk":{
-"reluctance":5
+"reluctance":7.5
 },
 "itineraryFilters":{
 "accessibilityScore":true,
