@@ -17,5 +17,6 @@
         "enabled": true
       }
     }
-  ]
+  ],
+  "fares": "gtfs"
 }

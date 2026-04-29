@@ -1,4 +1,5 @@
 {
   "maxTransferDuration": "1h",
-  "transitModelTimeZone": "America/Denver"
+  "transitModelTimeZone": "America/Denver",
+  "fares": "gtfs"
 }
