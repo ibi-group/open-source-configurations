@@ -13,5 +13,6 @@
   "gtfsDefaults" : {
     "blockBasedInterlining" : true
   },
-  "subwayAccessTime": 0
+  "subwayAccessTime": 0,
+  "fares": "gtfs"
 }
