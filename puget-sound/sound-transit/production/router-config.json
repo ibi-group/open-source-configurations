@@ -5,6 +5,11 @@
       "maxWindow": "10h"
     }
   },
+    "flex": {
+    "maxAccessWalkDuration": "10m",
+    "maxEgressWalkDuration": "10m",
+    "maxFlexTripDuration" : "90m"
+  },
   "routingDefaults": {
     "transferSlack": 0,
     "accessEgress": {
@@ -26,7 +31,7 @@
       }
     },
     "walk": {
-      "reluctance": 5
+      "reluctance": 2
     },
     "itineraryFilters": {
       "accessibilityScore": true,
@@ -44,6 +49,14 @@
         "maxZoom": 20,
         "minZoom": 14,
         "cacheMaxSeconds": 605
+      },
+      {
+        "name": "areaStops",
+        "type": "AreaStop",
+        "mapper": "OTPRR",
+        "maxZoom": 30,
+        "minZoom": 8,
+        "cacheMaxSeconds": 600
       },
       {
         "name": "stations",
