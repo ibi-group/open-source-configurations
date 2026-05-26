@@ -86,6 +86,14 @@
         "cacheMaxSeconds": 600
       },
       {
+        "name": "areaStops",
+        "type": "AreaStop",
+        "mapper": "OTPRR",
+        "maxZoom": 30,
+        "minZoom": 8,
+        "cacheMaxSeconds": 600
+      },
+      {
         "name": "rentalVehicles",
         "type": "VehicleRentalVehicle",
         "mapper": "Digitransit",
