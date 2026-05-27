@@ -90,7 +90,7 @@
         "type": "AreaStop",
         "mapper": "OTPRR",
         "maxZoom": 30,
-        "minZoom": 14,
+        "minZoom": 4,
         "cacheMaxSeconds": 600
       },
       {
