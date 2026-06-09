@@ -1,0 +1,10 @@
+{
+  // "elevationBucket": {
+  //   "accessKey" : "",
+  //   "secretKey" : "",
+  //   "bucketName" : ""
+  // },
+ "includeEllipsoidToGeoidDifference": true,
+  "writeCachedElevations": true,
+  "multiThreadElevationCalculations": true
+}
