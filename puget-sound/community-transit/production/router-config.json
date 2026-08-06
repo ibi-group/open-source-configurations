@@ -89,7 +89,7 @@
       "type": "real-time-alerts",
       "frequency": "20s",
       "url": "https://st-service-alerts-prod.s3.amazonaws.com/alerts.pb",
-      "feedId": "40"
+      "feedId": "SoundTransit"
     },
     {
       "type": "vehicle-rental",
@@ -167,19 +167,19 @@
       "type": "stop-time-updater",
       "frequency": "20s",
       "url": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/trip-updates-for-agency/40.pb?key=cc1bd3b1-15a9-446b-a095-0b56aac88819",
-      "feedId": "40"
+      "feedId": "SoundTransit"
     },
     {
       "type": "vehicle-positions",
       "frequency": "20s",
       "url": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/vehicle-positions-for-agency/40.pb?key=cc1bd3b1-15a9-446b-a095-0b56aac88819",
-      "feedId": "40"
+      "feedId": "SoundTransit"
     },
     {
       "type": "vehicle-positions",
       "frequency": "20s",
       "url": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/vehicle-positions-for-agency/95.pb?key=cc1bd3b1-15a9-446b-a095-0b56aac88819",
-      "feedId": "95"
+      "feedId": "WashingtonStateFerries"
     },
     {
       "type": "vehicle-positions",
@@ -203,7 +203,7 @@
       "type": "stop-time-updater",
       "frequency": "20s",
       "url": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/trip-updates-for-agency/95.pb?key=cc1bd3b1-15a9-446b-a095-0b56aac88819",
-      "feedId": "95"
+      "feedId": "WashingtonStateFerries"
     }
   ]
 }

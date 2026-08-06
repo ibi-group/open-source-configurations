@@ -7,6 +7,73 @@
     "islandWithStopsMaxSize": 30 // Seattle has many actual islands, so don't make this too aggressive
   },
   "boardingLocationTags": [],
+  "transitFeeds": [
+    {
+      "type": "gtfs",
+      "feedId": "CommTrans",
+      "source": "community-transit.zip"
+    },
+    {
+      "type": "gtfs",
+      "feedId": "CommTransFlex",
+      "source": "community-transit-flex.zip"
+    },
+    {
+      "type": "gtfs",
+      "feedId": "Everett",
+      "source": "everett-transit.zip"
+    },
+    {
+      "type": "gtfs",
+      "feedId": "Intercity",
+      "source": "intercity-transit.zip"
+    },
+    {
+      "type": "gtfs",
+      "feedId": "Island",
+      "source": "island-transit.zip"
+    },
+    {
+      "type": "gtfs",
+      "feedId": "kcm",
+      "source": "king-county-metro.zip"
+    },
+    {
+      "type": "gtfs",
+      "feedId": "Kitsap",
+      "source": "kitsap-transit.zip"
+    },
+    {
+      "type": "gtfs",
+      "feedId": "Pierce",
+      "source": "pierce-transit.zip"
+    },
+    {
+      "type": "gtfs",
+      "feedId": "SeattleMonorail",
+      "source": "seattle-monorail.zip"
+    },
+    {
+      "type": "gtfs",
+      "feedId": "Skagit",
+      "source": "skagit-transit.zip"
+    },
+    {
+      "type": "gtfs",
+      "feedId": "SoundTransit",
+      "source": "sound-transit.zip"
+    },
+    {
+      "type": "gtfs",
+      "feedId": "WashingtonStateFerries",
+      "source": "washington-state-ferries.zip"
+    },
+    {
+      "type": "gtfs",
+      "feedId": "Whatcom",
+      "source": "whatcom-transportation-authority.zip"
+    }
+  ],
   "transferRequests": [
     {
       "modes": "WALK"
