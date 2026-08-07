@@ -89,7 +89,7 @@
       "type": "real-time-alerts",
       "frequency": "20s",
       "url": "https://st-service-alerts-prod.s3.amazonaws.com/alerts.pb",
-      "feedId": "SoundTransit"
+      "feedId": "40"
     },
     {
       "type": "vehicle-rental",
@@ -113,19 +113,19 @@
       "type": "real-time-alerts",
       "frequency": "20s",
       "url": "http://s3.amazonaws.com/commtrans-realtime-prod/alerts.pb",
-      "feedId": "CommTrans"
+      "feedId": "3"
     },
     {
       "type": "stop-time-updater",
       "frequency": "20s",
       "url": "http://s3.amazonaws.com/commtrans-realtime-prod/tripupdates.pb",
-      "feedId": "CommTrans"
+      "feedId": "3"
     },
     {
       "type": "vehicle-positions",
       "frequency": "20s",
       "url": "http://s3.amazonaws.com/commtrans-realtime-prod/vehiclepositions.pb",
-      "feedId": "CommTrans"
+      "feedId": "3"
     },
     {
       "type": "stop-time-updater",
@@ -167,43 +167,43 @@
       "type": "stop-time-updater",
       "frequency": "20s",
       "url": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/trip-updates-for-agency/40.pb?key=cc1bd3b1-15a9-446b-a095-0b56aac88819",
-      "feedId": "SoundTransit"
+      "feedId": "40"
     },
     {
       "type": "vehicle-positions",
       "frequency": "20s",
       "url": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/vehicle-positions-for-agency/40.pb?key=cc1bd3b1-15a9-446b-a095-0b56aac88819",
-      "feedId": "SoundTransit"
+      "feedId": "40"
     },
     {
       "type": "vehicle-positions",
       "frequency": "20s",
       "url": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/vehicle-positions-for-agency/95.pb?key=cc1bd3b1-15a9-446b-a095-0b56aac88819",
-      "feedId": "WashingtonStateFerries"
+      "feedId": "4"
     },
     {
       "type": "vehicle-positions",
       "frequency": "20s",
       "url": "https://bustracker.ridewta.com/gtfsrt/vehicles",
-      "feedId": "Whatcom"
+      "feedId": "1"
     },
     {
       "type": "stop-time-updater",
       "frequency": "20s",
       "url": "https://bustracker.ridewta.com/gtfsrt/trips",
-      "feedId": "Whatcom"
+      "feedId": "1"
     },
     {
       "type": "real-time-alerts",
       "frequency": "20s",
       "url": "https://bustracker.ridewta.com/gtfsrt/alerts",
-      "feedId": "Whatcom"
+      "feedId": "1"
     },
     {
       "type": "stop-time-updater",
       "frequency": "20s",
       "url": "https://api.pugetsound.onebusaway.org/api/gtfs_realtime/trip-updates-for-agency/95.pb?key=cc1bd3b1-15a9-446b-a095-0b56aac88819",
-      "feedId": "WashingtonStateFerries"
+      "feedId": "4"
     }
   ]
 }
