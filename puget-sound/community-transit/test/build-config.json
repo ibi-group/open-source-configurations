@@ -7,6 +7,7 @@
     "islandWithStopsMaxSize": 30 // Seattle has many actual islands, so don't make this too aggressive
   },
   "boardingLocationTags": [],
+  /*
   "transitFeeds": [
     {
       "type": "gtfs",
@@ -69,6 +70,7 @@
       "source": "whatcom-transportation-authority.zip"
     }
   ],
+  */
   "transferRequests": [
     {
       "modes": "WALK"
