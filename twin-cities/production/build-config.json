@@ -6,7 +6,7 @@
     "islandWithStopsMaxSize": 30
   },
   "boardingLocationTags": [],
-  "osmNaming": "sidewalks",
+  "osmNaming": "sidewalks-crosswalks",
   "osmDefaults": {
     "osmTagMapping": "twin-cities"
   },
