@@ -21,5 +21,15 @@
       }
     }
   ],
-  "fares": "gtfs"
+  "fares": "gtfs",
+  "transfers": {
+    "walk": {
+    },
+    "bicycle": {
+    },
+    // allow transfers even when the accessiblity is not clearly defined, in the GTFS but at a high cost
+    "wheelchair": {
+      "stop": { "onlyConsiderAccessible": false, "unknownCost": 600, "inaccessibleCost": 3600 }
+    }
+  }
 }
