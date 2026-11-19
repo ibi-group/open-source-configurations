@@ -8,15 +8,14 @@
   },
   "stopConsolidationFile": "shared_stops.csv",
   "osmNaming": "sidewalks",
-  "transferRequests": [
-    {
-      "modes": "WALK"
+  "transfers": {
+    "walk": {
     },
-    {
-      "modes": "WALK",
-      "wheelchairAccessibility": {
-        "enabled": true
-      }
+    "bicycle": {
+    },
+    // allow transfers even when the accessiblity is not clearly defined, in the GTFS but at a high cost
+    "wheelchair": {
+      "stop": { "unknownCost": 600, "inaccessibleCost": 3600 }
     }
-  ]
+  }
 }

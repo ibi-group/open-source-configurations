@@ -13,5 +13,14 @@
     "osmTagMapping": "portland"
   },
   "includeEllipsoidToGeoidDifference": true,
-  "osmNaming": "portland"
+  "osmNaming": "portland",
+  "transfers": {
+    "walk": {
+    },
+    "bicycle": {
+    },
+    // only transfer with wheelchaira at stops that are explicity wheelchair-enabled
+    "wheelchair": {
+    }
+  }
 }
