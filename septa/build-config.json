@@ -6,7 +6,7 @@
     },
     // allow transfers even when the accessiblity is not clearly defined, in the GTFS but at a high cost
     "wheelchair": {
-      "stop": { "unknownCost": 600, "inaccessibleCost": 3600 }
+      "stop": { "onlyConsiderAccessible": false, "unknownCost": 600, "inaccessibleCost": 3600 }
     }
   },
   "gtfsDefaults" : {
