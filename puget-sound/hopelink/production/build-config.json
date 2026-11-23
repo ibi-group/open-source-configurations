@@ -5,15 +5,13 @@
     "islandWithoutStopsMaxSize": 300,
     "islandWithStopsMaxSize": 30
   },
-  "transferRequests": [
-    {
-      "modes": "WALK"
+  "transfers": {
+    "walk": {
     },
-    {
-      "modes": "WALK",
-      "wheelchairAccessibility": {
-        "enabled": true
-      }
+    "bicycle": {
+    },
+    // only transfer with wheelchaira at stops that are explicity wheelchair-enabled
+    "wheelchair": {
     }
-  ]
+  }
 }
