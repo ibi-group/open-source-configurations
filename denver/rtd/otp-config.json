@@ -1,10 +1,14 @@
 {
   "otpFeatures": {
     "ActuatorAPI": true,
+    "SandboxAPIGeocoder": true,
+    "SandboxAPIMapboxVectorTilesApi": true,
     "FlexRouting": true,
-    "ParallelRouting": true,
-    "FaresV2": true,
+    "OptimizeTransfers": true,
+    "FloatingBike": true,
     "SandboxAPIParkAndRideApi": true,
-    "OptimizeTransfers": true
+    "MinimumTransferTimeIsDefinitive": true,
+    "ExtraTransferLegOnSameStop": true,
+    "FaresV2": true
   }
 }
