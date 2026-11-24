@@ -5,22 +5,10 @@
     "islandWithoutStopsMaxSize": 300,
     "islandWithStopsMaxSize": 30
   },
-  "boardingLocationTags": [],
   "osmNaming": "sidewalks-crosswalks",
   "osmDefaults": {
     "osmTagMapping": "twin-cities"
   },
-  "transferRequests": [
-    {
-      "modes": "WALK"
-    },
-    {
-      "modes": "WALK",
-      "wheelchairAccessibility": {
-        "enabled": true
-      }
-    }
-  ],
   "fares": "gtfs",
   "transfers": {
     "walk": {
